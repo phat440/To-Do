@@ -16,4 +16,5 @@
 @media (prefers-reduced-motion: reduce) {
   .todo-enter { animation: none; }
   li { transition: none !important; }
+  circle { transition: none !important; }
 }
