@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes todoIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.todo-enter {
+  animation: todoIn 220ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .todo-enter { animation: none; }
+  li { transition: none !important; }
+}
